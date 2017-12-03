@@ -8,6 +8,7 @@ var main = require('./app/main');
 var header = require('./app/header');
 var title = require('./app/title');
 var footer = require('./app/footer');
+import 'bootstrap';
 
 require('./index.scss');
 

@@ -57,6 +57,13 @@ module.exports = {
         postcss: () => [autoprefixer]
       },
       debug: true
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Tether: 'tether',
+      Popper: 'popper.js'
     })
   ],
   devtool: 'source-map',
