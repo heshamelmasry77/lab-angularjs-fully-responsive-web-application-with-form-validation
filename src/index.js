@@ -1,6 +1,6 @@
 const angular = require('angular');
 
-const techsModule = require('./app/components/carousel/index');
+const techsModule = require('./app/modules/home/index');
 require('angular-ui-router');
 const routesConfig = require('./routes');
 

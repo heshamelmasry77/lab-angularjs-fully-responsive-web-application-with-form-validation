@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -22846,7 +22846,7 @@ return exports;
 }({},$,Popper));
 //# sourceMappingURL=bootstrap.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(25)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(23)))
 
 /***/ }),
 /* 6 */,
@@ -22854,7 +22854,7 @@ return exports;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  template: __webpack_require__(18)
+  template: __webpack_require__(17)
 };
 
 
@@ -22863,7 +22863,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  template: __webpack_require__(19)
+  template: __webpack_require__(18)
 };
 
 
@@ -22871,9 +22871,9 @@ module.exports = {
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(26);
+__webpack_require__(24);
 module.exports = {
-  template: __webpack_require__(20)
+  template: __webpack_require__(19)
 };
 
 
@@ -22882,7 +22882,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  template: __webpack_require__(21)
+  template: __webpack_require__(20)
 };
 
 
@@ -57138,7 +57138,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".header nav {\n  background-color: #3c4b55; }\n  .header nav li.nav-item a.nav-link {\n    color: #ffffff;\n    font-size: 12px; }\n    .header nav li.nav-item a.nav-link:hover {\n      color: lightgray; }\n", ""]);
+exports.push([module.i, ".header nav {\n  background-color: #3c4b55; }\n  .header nav .navbar-brand {\n    color: #ffff00;\n    font-size: 32px; }\n  .header nav li.nav-item a.nav-link {\n    color: #ffffff;\n    font-size: 12px; }\n    .header nav li.nav-item a.nav-link:hover {\n      color: lightgray; }\n", ""]);
 
 // exports
 
@@ -57159,34 +57159,32 @@ exports.push([module.i, "/*!\n * Bootstrap v4.0.0-beta.2 (https://getbootstrap.c
 
 /***/ }),
 /* 16 */,
-/* 17 */,
-/* 18 */
+/* 17 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-container\">\n  <fountain-header></fountain-header>\n  <main class=\"main\">\n    <!--<fountain-title></fountain-title>-->\n    <fountain-techs></fountain-techs>\n  </main>\n  <!--<fountain-footer></fountain-footer>-->\n</div>\n";
+module.exports = "<div class=\"main-container\">\n  <fountain-header></fountain-header>\n  <main class=\"main\">\n    <!--<fountain-title></fountain-title>-->\n    <fountain-home></fountain-home>\n  </main>\n  <!--<fountain-footer></fountain-footer>-->\n</div>\n";
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = "<footer class=\"footer\">\n  Build with ♥ by the&nbsp;\n  <a href=\"https://github.com/orgs/FountainJS/people\">\n    FountainJS team\n  </a>\n</footer>\n";
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"header\">\n    <nav class=\"navbar navbar-expand-lg navbar-light \">\n        <a class=\"navbar-brand\" href=\"#\">Navbar</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo02\"\n                aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo02\">\n            <ul class=\"nav navbar-nav ml-auto\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">OUR WORK</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">OUR APPROACH</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">SECRET SAUCE INSIGHT</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">CAREERS</a>\n                </li>\n\n            </ul>\n        </div>\n    </nav>\n</header>\n";
+module.exports = "<header class=\"header\">\n    <nav class=\"navbar navbar-expand-lg navbar-light \">\n        <a class=\"navbar-brand\" href=\"#\">L A B</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo02\"\n                aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo02\">\n            <ul class=\"nav navbar-nav ml-auto\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">OUR WORK</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">OUR APPROACH</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">SECRET SAUCE INSIGHT</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\">CAREERS</a>\n                </li>\n\n            </ul>\n        </div>\n    </nav>\n</header>\n";
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"title\">\n  <h1 class=\"title-h1\">'Allo, 'Allo!</h1>\n  <div>\n    <img class=\"title-logo\" src=\"http://fountainjs.io/assets/imgs/yeoman.png\"/>\n    <img class=\"title-logo\" src=\"http://fountainjs.io/assets/imgs/fountain.png\"/>\n  </div>\n  <h2 class=\"title-h2\">Always a pleasure scaffolding your apps.</h2>\n</div>\n";
 
 /***/ }),
-/* 22 */,
-/* 23 */,
-/* 24 */
+/* 21 */,
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57195,7 +57193,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
 const angular = __webpack_require__(0);
 
-const techsModule = __webpack_require__(28);
+const techsModule = __webpack_require__(44);
 __webpack_require__(4);
 const routesConfig = __webpack_require__(11);
 
@@ -57217,7 +57215,7 @@ angular
 
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59660,10 +59658,10 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(27)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(25)))
 
 /***/ }),
-/* 26 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -59689,7 +59687,7 @@ if(false) {
 }
 
 /***/ }),
-/* 27 */
+/* 25 */
 /***/ (function(module, exports) {
 
 var g;
@@ -59716,49 +59714,221 @@ module.exports = g;
 
 
 /***/ }),
-/* 28 */
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const angular = __webpack_require__(0);
 
-const techs = __webpack_require__(30);
+const carousel = __webpack_require__(52);
+const card = __webpack_require__(54);
+const home = __webpack_require__(48);
 
-const techsModule = 'techs';
+const homeModule = 'home';
 
-module.exports = techsModule;
+module.exports = homeModule;
 
 angular
-  .module(techsModule, [])
-  .component('fountainTechs', techs);
+  .module(homeModule, [])
+  .component('fountainCard', card)
+  .component('fountainCarousel', carousel)
+  .component('fountainHome', home);
 
 
 /***/ }),
-/* 29 */
+/* 45 */,
+/* 46 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"techs-container\">\n    <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img class=\"d-block w-100\" src=\"xxxHTMLLINKxxx0.79123014108932390.9607207468122645xxx\" alt=\"First slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" src=\"xxxHTMLLINKxxx0.28741766999167260.568636274810773xxx\" alt=\"Second slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" src=\"xxxHTMLLINKxxx0.167338840260828240.5508646744667665xxx\" alt=\"Third slide\">\n            </div>\n        </div>\n        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n            <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n            <span class=\"sr-only\">Previous</span>\n        </a>\n        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n            <span class=\"sr-only\">Next</span>\n        </a>\n    </div>\n</div>\n";
+module.exports = "<div class=\"home-container\">\n    <fountain-carousel></fountain-carousel>\n    <fountain-card></fountain-card>\n</div>\n";
 
 /***/ }),
-/* 30 */
+/* 47 */,
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(60);
 
-TechsController.$inject = ["$http"];module.exports = {
-  template: __webpack_require__(29),
-  controller: TechsController
+module.exports = {
+  template: __webpack_require__(46),
+  controller: HomeController
 };
 
 /** @ngInject */
-function TechsController($http) {
-  let vm = this;
-
-  $http
-    .get('app/components/carousel/techs.json')
-    .then(function (response) {
-      vm.techs = response.data;
-    });
+function HomeController() {
 }
 
+
+/***/ }),
+/* 49 */,
+/* 50 */,
+/* 51 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"carousel-container\">\n    <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img class=\"d-block w-100\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"First slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Second slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Third slide\">\n            </div>\n        </div>\n    </div>\n</div>";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(56);
+module.exports = {
+  template: __webpack_require__(51)
+};
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"card-container\">\n    <div class=\"card\" style=\"width: 23rem;\">\n        <div class=\"card-body\">\n            <h4 class=\"card-title\">Elegant Communication</h4>\n            <p class=\"card-text\">\n                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,\n                sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing\n                elit, sed diam Lorem ipsum dolor sit amet, consectetuer\n                adipiscing elit, sed diam Lorem ipsum dolor sit amet,\n                consectetuer adipiscing elit, sed diam Lorem ipsum dolor\n                sit amet, consectetuer adipiscing elit, sed diam </p>\n            <a href=\"#\" class=\"btn\">LINK TEXT</a>\n        </div>\n    </div>\n</div>";
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(58);
+module.exports = {
+  template: __webpack_require__(53)
+};
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(55);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(3)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./carousel.scss", function() {
+			var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./carousel.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, ".card-container {\n  position: absolute;\n  top: 70px;\n  left: 70px; }\n  .card-container .card {\n    background-color: #3c4b55;\n    border-radius: 0; }\n    .card-container .card h4 {\n      color: #ffff00; }\n    .card-container .card p {\n      font-size: 14px;\n      color: #ffffff; }\n    .card-container .card a {\n      color: #3c4b55;\n      background-color: #ffff00;\n      width: 100%;\n      border-radius: 0;\n      text-transform: uppercase; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(57);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(3)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./card.scss", function() {
+			var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./card.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, ".home-container {\n  position: relative; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(59);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(3)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/postcss-loader/index.js!./home.scss", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/postcss-loader/index.js!./home.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

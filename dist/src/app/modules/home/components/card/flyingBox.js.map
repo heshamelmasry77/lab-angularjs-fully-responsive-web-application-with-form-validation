@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/app/modules/home/components/card/flyingBox.js"],"names":["module","exports","template","require"],"mappings":";;AAAAA,OAAOC,OAAP,GAAiB;AACfC,YAAUC,QAAQ,aAAR;AADK,CAAjB","file":"flyingBox.js","sourcesContent":["module.exports = {\n  template: require('./card.html')\n};\n"]}

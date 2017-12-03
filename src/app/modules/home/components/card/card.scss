@@ -1,0 +1,24 @@
+.card-container {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  .card {
+    background-color: #3c4b55;
+    border-radius: 0;
+    h4 {
+      color: #ffff00;
+    }
+    p {
+      font-size: 14px;
+      color: #ffffff;
+    }
+    a {
+      color: #3c4b55;
+      background-color: #ffff00;
+      width: 100%;
+      border-radius: 0;
+      text-transform: uppercase;
+    }
+  }
+
+}

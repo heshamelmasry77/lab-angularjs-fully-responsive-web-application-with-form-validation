@@ -4,7 +4,7 @@ require('bootstrap');
 
 var angular = require('angular');
 
-var techsModule = require('./app/components/carousel/index');
+var techsModule = require('./app/modules/home/index');
 require('angular-ui-router');
 var routesConfig = require('./routes');
 
