@@ -2,52 +2,58 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/home.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/carousel/carousel.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/card.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/flyingBox.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/jumbotron.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/flyingBox.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/jumbotron.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/carousel.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/home.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/carousel.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/home.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/tech.spec.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/card.js" />
         <item url="file://$PROJECT_DIR$/dist/src/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/tech.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/flyingBox.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/techs.spec.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/jumbotron.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/components/carousel/techs.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/flyingBox.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/techs.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/jumbotron.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/carousel.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/tech.spec.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/album/album.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/album/carousel.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/list-group-boxes/carousel.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/tech.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/home.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/carousel/carousel.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/card.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/flyingBox.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/jumbotron.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/flyingBox.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/jumbotron.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/carousel.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/home.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/carousel.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/home.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/tech.spec.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/card.js" />
       <root url="file://$PROJECT_DIR$/dist/src/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/tech.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/card/flyingBox.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/techs.spec.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/jumbotron.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/components/carousel/techs.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/flyingBox.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/techs.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/jumbotron.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/carousel.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/tech.spec.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/album/album.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/album/carousel.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/list-group-boxes/carousel.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/tech.js" />
     </CLASSES>
     <SOURCES />
