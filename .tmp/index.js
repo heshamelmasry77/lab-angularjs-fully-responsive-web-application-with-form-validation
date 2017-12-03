@@ -59782,7 +59782,7 @@ function HomeController() {
 /* 51 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel-container\">\n    <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img class=\"d-block w-100\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"First slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Second slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Third slide\">\n            </div>\n        </div>\n    </div>\n</div>";
+module.exports = "<div class=\"carousel-container\">\n    <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img class=\"d-block\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"First slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Second slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Third slide\">\n            </div>\n        </div>\n    </div>\n</div>";
 
 /***/ }),
 /* 52 */
@@ -59819,7 +59819,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".carousel-container {\n  z-index: 1; }\n  .carousel-container img {\n    width: auto;\n    height: 400px; }\n    @media screen and (min-width: 992px) {\n      .carousel-container img {\n        height: 100%;\n        width: 100%; } }\n  .carousel-container .carousel-indicators {\n    z-index: 1; }\n", ""]);
 
 // exports
 
@@ -59859,7 +59859,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".card-container {\n  position: absolute;\n  top: 70px;\n  left: 70px; }\n  .card-container .card {\n    background-color: #3c4b55;\n    border-radius: 0; }\n    .card-container .card h4 {\n      color: #ffff00; }\n    .card-container .card p {\n      font-size: 14px;\n      color: #ffffff; }\n    .card-container .card a {\n      color: #3c4b55;\n      background-color: #ffff00;\n      width: 100%;\n      border-radius: 0;\n      text-transform: uppercase; }\n", ""]);
+exports.push([module.i, ".card-container {\n  position: absolute;\n  top: 7%;\n  left: 2%;\n  z-index: 2; }\n  .card-container .card {\n    background-color: #3c4b55;\n    border-radius: 0; }\n    .card-container .card h4 {\n      color: #ffff00; }\n    .card-container .card p {\n      font-size: 14px;\n      color: #ffffff; }\n    .card-container .card a {\n      color: #3c4b55;\n      background-color: #ffff00;\n      width: 100%;\n      border-radius: 0;\n      text-transform: uppercase; }\n", ""]);
 
 // exports
 

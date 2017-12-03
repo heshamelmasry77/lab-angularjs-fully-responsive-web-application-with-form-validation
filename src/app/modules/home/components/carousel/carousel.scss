@@ -1,3 +1,15 @@
 .carousel-container {
+  z-index: 1;
+  img {
+    width: auto;
+    height: 400px;
+    @media screen and (min-width: 992px) {
+      height: 100%;
+      width: 100%;
+    }
+  }
 
+  .carousel-indicators {
+    z-index: 1;
+  }
 }
