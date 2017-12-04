@@ -1,42 +1,44 @@
 <div class="form-container">
+    <toaster-container></toaster-container>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-xs-none">
-
             </div>
-
-            <div class="col-lg-6">
-                <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-
-                    <!-- NAME -->
+            <div class="col-lg-6 form-wrapper">
+                <form name="userForm" ng-submit="$ctrl.submitForm(userForm.$valid)" novalidate>
+                    <h4>Elegant Communication</h4>
+                    <!-- Full NAME -->
                     <div class="form-group"
-                         ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-                        <label>Name*</label>
-                        <input type="text" name="name" class="form-control" ng-model="user.name" required>
-                        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is
+                         ng-class="{ 'has-error' : userForm.fullName.$invalid && !userForm.fullName.$pristine }">
+                        <input title="fullName" type="text" name="fullName" class="form-control"
+                               ng-model="user.fullName" placeholder="full name*" required>
+                        <p ng-show="userForm.fullName.$invalid && !userForm.fullName.$pristine" class="help-block">You
+                            full name is
                             required.</p>
-                    </div>
-
-                    <!-- USERNAME -->
-                    <div class="form-group"
-                         ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
-                        <label>Username</label>
-                        <input type="text" name="username" class="form-control" ng-model="user.username"
-                               ng-minlength="3" ng-maxlength="8">
-                        <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
-                        <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
                     </div>
 
                     <!-- EMAIL -->
                     <div class="form-group"
                          ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
-                        <label>Email</label>
-                        <input type="email" name="email" class="form-control" ng-model="user.email">
+                        <input type="email" name="email" class="form-control" ng-model="user.email"
+                               placeholder="email address *">
                         <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a
                             valid email.</p>
                     </div>
+                    <!-- Strategy -->
+                    <div class="form-group">
+                        <select title="selectStrategy" class="form-control">
+                            <option value="">digital strategy or transformation</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">CONTACT ME</button>
 
                 </form>
             </div>
