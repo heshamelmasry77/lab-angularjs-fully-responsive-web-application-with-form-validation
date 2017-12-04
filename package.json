@@ -25,7 +25,6 @@
     "babel-loader": "^6.3.2",
     "browser-sync": "^2.18.8",
     "browser-sync-spa": "^1.0.3",
-    "browserify-shim": "^3.8.14",
     "css-loader": "^0.26.1",
     "del": "^2.2.2",
     "es6-shim": "^0.35.3",
@@ -89,22 +88,5 @@
     "extends": [
       "xo-space"
     ]
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browser": {
-    "jquery": "./node_modules/jquery/dist/jquery.js"
-  },
-  "browserify-shim": {
-    "jquery": "$",
-    "angular": {
-      "exports": "angular",
-      "depends": [
-        "jquery"
-      ]
-    }
   }
 }

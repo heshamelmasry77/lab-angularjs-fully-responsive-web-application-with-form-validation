@@ -7,12 +7,5 @@ module.exports = {
 };
 
 /** @ngInject */
-function FooterController($, $log, jquery) {
-  fuck();
-  function fuck() {
-    jquery(document).ready(function () {
-      $log.log('fuck');
-    });
-  }
-}
+function FooterController() {}
 //# sourceMappingURL=footer.js.map
