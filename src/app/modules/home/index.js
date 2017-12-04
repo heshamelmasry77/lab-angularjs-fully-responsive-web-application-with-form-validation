@@ -1,5 +1,6 @@
 const angular = require('angular');
 
+const form = require('./components/form/form');
 const carousel = require('./components/carousel/carousel');
 const card = require('./components/card/card');
 const album = require('./components/album/album');
@@ -11,6 +12,7 @@ module.exports = homeModule;
 
 angular
   .module(homeModule, [])
+  .component('fountainForm', form)
   .component('fountainCard', card)
   .component('fountainCarousel', carousel)
   .component('fountainAlbum', album)

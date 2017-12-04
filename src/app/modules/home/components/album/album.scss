@@ -1,26 +1,40 @@
 .album-container {
 
   .album {
-    min-height: 50rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     background-color: #f7f7f7;
   }
 
   .card {
-    float: left;
-    width: 33.333%;
-    padding: .75rem;
-    margin-bottom: 2rem;
+    padding: 0;
+    margin-bottom: 0;
     border: 0;
-  }
+    position: relative;
 
-  .card > img {
-    margin-bottom: .75rem;
   }
-
-  .card-text {
-    font-size: 85%;
+  .card {
+    a {
+      position: relative;
+      img {
+        border:none;
+        padding: 0;
+        margin: 0;
+        -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(60%);
+        border-radius: 0;
+        &:hover {
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
+        }
+      }
+      .card-text {
+        font-size: 85%;
+        position: absolute;
+        top: 50%;
+        padding: 0 1rem 0 1rem;
+        width: 100%;
+        color: #ffff00;
+      }
+    }
   }
 
 }

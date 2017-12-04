@@ -59737,6 +59737,7 @@ module.exports = g;
 
 const angular = __webpack_require__(0);
 
+const form = __webpack_require__(67);
 const carousel = __webpack_require__(52);
 const card = __webpack_require__(54);
 const album = __webpack_require__(63);
@@ -59748,6 +59749,7 @@ module.exports = homeModule;
 
 angular
   .module(homeModule, [])
+  .component('fountainForm', form)
   .component('fountainCard', card)
   .component('fountainCarousel', carousel)
   .component('fountainAlbum', album)
@@ -59759,7 +59761,7 @@ angular
 /* 46 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"home-container\">\n    <fountain-carousel></fountain-carousel>\n    <fountain-card></fountain-card>\n    <fountain-album></fountain-album>\n</div>\n";
+module.exports = "<div class=\"home-container\">\n    <fountain-carousel></fountain-carousel>\n    <fountain-card></fountain-card>\n    <fountain-album></fountain-album>\n    <fountain-form></fountain-form>\n</div>\n";
 
 /***/ }),
 /* 47 */,
@@ -59784,7 +59786,7 @@ function HomeController() {
 /* 51 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel-container\">\n    <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img class=\"d-block\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"First slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Second slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Third slide\">\n            </div>\n        </div>\n    </div>\n</div>";
+module.exports = "<div class=\"carousel-container\">\n    <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img class=\"d-block img-fluid\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"First slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block img-fluid\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Second slide\">\n            </div>\n            <div class=\"carousel-item\">\n                <img class=\"d-block img-fluid\" ng-src=\"/assets/images/carousel/slide_1.png\" alt=\"Third slide\">\n            </div>\n        </div>\n    </div>\n</div>";
 
 /***/ }),
 /* 52 */
@@ -59941,7 +59943,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".album-container .album {\n  min-height: 50rem;\n  padding-top: 3rem;\n  padding-bottom: 3rem;\n  background-color: #f7f7f7; }\n\n.album-container .card {\n  float: left;\n  width: 33.333%;\n  padding: .75rem;\n  margin-bottom: 2rem;\n  border: 0; }\n\n.album-container .card > img {\n  margin-bottom: .75rem; }\n\n.album-container .card-text {\n  font-size: 85%; }\n", ""]);
+exports.push([module.i, ".album-container .album {\n  background-color: #f7f7f7; }\n\n.album-container .card {\n  padding: 0;\n  margin-bottom: 0;\n  border: 0;\n  position: relative; }\n\n.album-container .card a {\n  position: relative; }\n  .album-container .card a img {\n    border: none;\n    padding: 0;\n    margin: 0;\n    -webkit-filter: grayscale(60%);\n    /* Safari 6.0 - 9.0 */\n    filter: grayscale(60%);\n    border-radius: 0; }\n    .album-container .card a img:hover {\n      -webkit-filter: grayscale(50%);\n      /* Safari 6.0 - 9.0 */\n      filter: grayscale(50%); }\n  .album-container .card a .card-text {\n    font-size: 85%;\n    position: absolute;\n    top: 50%;\n    padding: 0 1rem 0 1rem;\n    width: 100%;\n    color: #ffff00; }\n", ""]);
 
 // exports
 
@@ -59950,7 +59952,7 @@ exports.push([module.i, ".album-container .album {\n  min-height: 50rem;\n  padd
 /* 62 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"album-container\">\n<div class=\"album text-muted\">\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" style=\"height: 280px; width: 100%; display: block;\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a1d%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a1d%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a22%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a22%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a24%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a24%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a26%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a26%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a28%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a28%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a2b%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a2b%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a2f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a2f%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a32%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a32%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n            <div class=\"card\">\n                <img data-src=\"holder.js/100px280?theme=thumb\" alt=\"Thumbnail [100%x280]\" src=\"data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1601e7d9a36%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1601e7d9a36%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22117.34375%22%20y%3D%22148.1%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E\" data-holder-rendered=\"true\" style=\"height: 280px; width: 100%; display: block;\">\n                <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n            </div>\n        </div>\n\n    </div>\n</div>\n</div>";
+module.exports = "<div class=\"album-container\">\n    <div class=\"album\">\n        <div class=\"container\">\n            <div class=\"row text-center text-lg-left\">\n\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card\">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/one.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Digital Strategy</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/two.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Design</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/three.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Development</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/four.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Performance<br/>\n                            Marketing</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/four.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Neuro Linguistic<br/>\n                            Search</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/three.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Video</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/two.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Neuromarketing</h4>\n                    </a>\n                </div>\n                <div class=\"col-lg-3 col-md-4 col-sm-6 card \">\n                    <a href=\"#\" class=\"d-block mb-0 h-100\">\n                        <img class=\"img-fluid\" src=\"/assets/images/album/one.png\" alt=\"\">\n                        <h4 class=\"card-text text-center\">Analysis &<br/>\n                            Improvement</h4>\n                    </a>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</div>";
 
 /***/ }),
 /* 63 */
@@ -59980,6 +59982,68 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./album.scss", function() {
 			var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./album.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"form-container\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-6 d-xs-none\">\n\n            </div>\n\n            <div class=\"col-lg-6\">\n                <form name=\"userForm\" ng-submit=\"submitForm(userForm.$valid)\" novalidate>\n\n                    <!-- NAME -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }\">\n                        <label>Name*</label>\n                        <input type=\"text\" name=\"name\" class=\"form-control\" ng-model=\"user.name\" required>\n                        <p ng-show=\"userForm.name.$invalid && !userForm.name.$pristine\" class=\"help-block\">You name is\n                            required.</p>\n                    </div>\n\n                    <!-- USERNAME -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }\">\n                        <label>Username</label>\n                        <input type=\"text\" name=\"username\" class=\"form-control\" ng-model=\"user.username\"\n                               ng-minlength=\"3\" ng-maxlength=\"8\">\n                        <p ng-show=\"userForm.username.$error.minlength\" class=\"help-block\">Username is too short.</p>\n                        <p ng-show=\"userForm.username.$error.maxlength\" class=\"help-block\">Username is too long.</p>\n                    </div>\n\n                    <!-- EMAIL -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }\">\n                        <label>Email</label>\n                        <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"user.email\">\n                        <p ng-show=\"userForm.email.$invalid && !userForm.email.$pristine\" class=\"help-block\">Enter a\n                            valid email.</p>\n                    </div>\n\n                    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n\n                </form>\n            </div>\n        </div>\n    </div>\n</div>";
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(68);
+module.exports = {
+  template: __webpack_require__(65),
+  controller: FormController
+};
+
+/** @ngInject */
+function FormController() {
+}
+
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(66);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(3)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./form.scss", function() {
+			var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/postcss-loader/index.js!./form.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});

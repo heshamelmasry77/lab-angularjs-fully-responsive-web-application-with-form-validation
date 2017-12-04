@@ -9,8 +9,10 @@
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/flyingBox.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/jumbotron.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/carousel.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/form/album.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/form/form.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/home.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/home/index.js" />
         <item url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/carousel.js" />
@@ -37,8 +39,10 @@
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/flyingBox/flyingBox.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/jumbotron.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/jumbotron/carousel.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/components/carousel/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/form/album.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/components/form/form.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/home.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/home/index.js" />
       <root url="file://$PROJECT_DIR$/dist/src/app/modules/techs/components/carousel.js" />
