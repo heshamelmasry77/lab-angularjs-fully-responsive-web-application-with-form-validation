@@ -7,8 +7,6 @@ var angular = require('angular');
 var techsModule = require('./app/modules/home/index');
 require('angular-ui-router');
 require('angularjs-toaster');
-require('angular-carousel');
-require('angular-touch');
 var routesConfig = require('./routes');
 
 var main = require('./app/main');
@@ -18,5 +16,5 @@ var footer = require('./app/shared/footer/footer');
 
 require('./index.scss');
 
-angular.module('app', [techsModule, 'ui.router', 'toaster', 'angular-carousel', 'ngTouch']).config(routesConfig).component('app', main).component('fountainHeader', header).component('fountainTitle', title).component('fountainFooter', footer);
+angular.module('app', [techsModule, 'ui.router', 'toaster']).config(routesConfig).component('app', main).component('fountainHeader', header).component('fountainTitle', title).component('fountainFooter', footer);
 //# sourceMappingURL=index.js.map

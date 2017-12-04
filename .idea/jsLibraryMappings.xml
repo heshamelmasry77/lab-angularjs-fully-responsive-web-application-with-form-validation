@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{lab-angularjs-fully-responsive-web-application-with-form-validation/node_modules}" />
+    <file url="PROJECT" libraries="{Generated files, bootstrap-DefinitelyTyped, lab-angularjs-fully-responsive-web-application-with-form-validation/node_modules, redux-form-DefinitelyTyped}" />
+  </component>
+</project>

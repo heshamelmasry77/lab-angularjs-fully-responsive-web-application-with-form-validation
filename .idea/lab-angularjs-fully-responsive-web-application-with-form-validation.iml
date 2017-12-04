@@ -8,5 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="redux-form-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="Generated files" level="project" />
   </component>
 </module>

@@ -3,8 +3,6 @@ const angular = require('angular');
 const techsModule = require('./app/modules/home/index');
 require('angular-ui-router');
 require('angularjs-toaster');
-require('angular-carousel');
-require('angular-touch');
 const routesConfig = require('./routes');
 
 const main = require('./app/main');
@@ -17,7 +15,7 @@ import 'bootstrap';
 require('./index.scss');
 
 angular
-  .module('app', [techsModule, 'ui.router', 'toaster', 'angular-carousel', 'ngTouch'])
+  .module('app', [techsModule, 'ui.router', 'toaster'])
   .config(routesConfig)
   .component('app', main)
   .component('fountainHeader', header)
