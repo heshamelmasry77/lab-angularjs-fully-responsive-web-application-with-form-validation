@@ -26,6 +26,15 @@
                         <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a
                             valid email.</p>
                     </div>
+                    <!-- Phone -->
+
+                    <div class="form-group"
+                         ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine }">
+                        <input type="number" name="phone" class="form-control" ng-model="user.phone"
+                               placeholder="contact number *" required>
+                        <p ng-show="userForm.phone.$invalid && !userForm.phone.$pristine" class="help-block">Enter a
+                            your contact number.</p>
+                    </div>
                     <!-- Strategy -->
                     <div class="form-group" ng-class="{ 'has-error' : userForm.strategy.$invalid && !userForm.strategy.$pristine }">
 

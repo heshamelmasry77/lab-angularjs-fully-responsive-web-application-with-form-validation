@@ -23409,8 +23409,8 @@ angular
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(44);
-const $ = __webpack_require__(3);
-const jq = $.noConflict();
+// const $ = require('jquery');
+// const jq = $.noConflict();
 
 module.exports = {
   template: __webpack_require__(29),
@@ -23421,26 +23421,7 @@ module.exports = {
 function FooterController() {
   const vm = this;
   vm.init = init;
-  vm.hide = hide;
   function init() {
-    vm.hide();
-  }
-  function hide() {
-    jq('p').addClass('hidden');
-    jq('.carousel[data-type="multi"] .item').each(function () {
-      let next = jq(this).next();
-      if (!next.length) {
-        next = jq(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo(jq(this));
-      for (let i = 0; i < 4; i++) {
-        next = next.next();
-        if (!next.length) {
-          next = jq(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo(jq(this));
-      }
-    });
   }
 }
 
@@ -57787,7 +57768,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".footer {\n  background-color: #3c4b55; }\n", ""]);
 
 // exports
 
@@ -57848,7 +57829,7 @@ module.exports = "<div class=\"carousel-container\">\n    <div id=\"carouselExam
 /* 27 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"form-container\">\n    <toaster-container></toaster-container>\n\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-6 d-xs-none\">\n            </div>\n            <div class=\"col-lg-6 form-wrapper\">\n                <form name=\"userForm\" ng-submit=\"$ctrl.submitForm(userForm.$valid)\" novalidate>\n                    <h4>Elegant Communication</h4>\n                    <!-- Full NAME -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.fullName.$invalid && !userForm.fullName.$pristine}\">\n                        <input title=\"fullName\" type=\"text\" name=\"fullName\" class=\"form-control\"\n                               ng-model=\"user.fullName\" placeholder=\"full name*\" required>\n                        <p ng-show=\"userForm.fullName.$invalid && !userForm.fullName.$pristine\" class=\"help-block\">You\n                            full name is\n                            required.</p>\n                    </div>\n\n                    <!-- EMAIL -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }\">\n                        <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"user.email\"\n                               placeholder=\"email address *\">\n                        <p ng-show=\"userForm.email.$invalid && !userForm.email.$pristine\" class=\"help-block\">Enter a\n                            valid email.</p>\n                    </div>\n                    <!-- Strategy -->\n                    <div class=\"form-group\" ng-class=\"{ 'has-error' : userForm.strategy.$invalid && !userForm.strategy.$pristine }\">\n\n                    <select title=\"selectStrategy\" name=\"strategy\" class=\"form-control\" ng-model=\"user.strategy\" required>\n                            <option value=\"\">digital strategy or transformation</option>\n                            <option>1</option>\n                            <option>2</option>\n                            <option>3</option>\n                            <option>4</option>\n                            <option>5</option>\n                        </select>\n                        <p class=\"help-inline\" ng-show=\"userForm.strategy.$error.required && !userForm.strategy.$pristine\">Required</p>\n                    </div>\n\n                    <button type=\"submit\" class=\"btn btn-primary\">CONTACT ME</button>\n\n                </form>\n            </div>\n        </div>\n    </div>\n</div>";
+module.exports = "<div class=\"form-container\">\n    <toaster-container></toaster-container>\n\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-6 d-xs-none\">\n            </div>\n            <div class=\"col-lg-6 form-wrapper\">\n                <form name=\"userForm\" ng-submit=\"$ctrl.submitForm(userForm.$valid)\" novalidate>\n                    <h4>Elegant Communication</h4>\n                    <!-- Full NAME -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.fullName.$invalid && !userForm.fullName.$pristine}\">\n                        <input title=\"fullName\" type=\"text\" name=\"fullName\" class=\"form-control\"\n                               ng-model=\"user.fullName\" placeholder=\"full name*\" required>\n                        <p ng-show=\"userForm.fullName.$invalid && !userForm.fullName.$pristine\" class=\"help-block\">You\n                            full name is\n                            required.</p>\n                    </div>\n\n                    <!-- EMAIL -->\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }\">\n                        <input type=\"email\" name=\"email\" class=\"form-control\" ng-model=\"user.email\"\n                               placeholder=\"email address *\">\n                        <p ng-show=\"userForm.email.$invalid && !userForm.email.$pristine\" class=\"help-block\">Enter a\n                            valid email.</p>\n                    </div>\n                    <!-- Phone -->\n\n                    <div class=\"form-group\"\n                         ng-class=\"{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine }\">\n                        <input type=\"number\" name=\"phone\" class=\"form-control\" ng-model=\"user.phone\"\n                               placeholder=\"contact number *\" required>\n                        <p ng-show=\"userForm.phone.$invalid && !userForm.phone.$pristine\" class=\"help-block\">Enter a\n                            your contact number.</p>\n                    </div>\n                    <!-- Strategy -->\n                    <div class=\"form-group\" ng-class=\"{ 'has-error' : userForm.strategy.$invalid && !userForm.strategy.$pristine }\">\n\n                    <select title=\"selectStrategy\" name=\"strategy\" class=\"form-control\" ng-model=\"user.strategy\" required>\n                            <option value=\"\">digital strategy or transformation</option>\n                            <option>1</option>\n                            <option>2</option>\n                            <option>3</option>\n                            <option>4</option>\n                            <option>5</option>\n                        </select>\n                        <p class=\"help-inline\" ng-show=\"userForm.strategy.$error.required && !userForm.strategy.$pristine\">Required</p>\n                    </div>\n\n                    <button type=\"submit\" class=\"btn btn-primary\">CONTACT ME</button>\n\n                </form>\n            </div>\n        </div>\n    </div>\n</div>";
 
 /***/ }),
 /* 28 */
