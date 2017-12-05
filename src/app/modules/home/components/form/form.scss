@@ -1,6 +1,10 @@
 .form-container {
   .form-wrapper {
     padding-right: 0;
+    @media screen and (max-width: 992px) {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
     form {
       h4 {
         color: #ffff00;
