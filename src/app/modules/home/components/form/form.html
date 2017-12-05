@@ -27,7 +27,7 @@
                             valid email.</p>
                     </div>
                     <!-- Strategy -->
-                    <div class="form-group" ng-class="{ 'has-error' : userForm.strategy.$invalid }">
+                    <div class="form-group" ng-class="{ 'has-error' : userForm.strategy.$invalid && !userForm.strategy.$pristine }">
 
                     <select title="selectStrategy" name="strategy" class="form-control" ng-model="user.strategy" required>
                             <option value="">digital strategy or transformation</option>
@@ -37,7 +37,7 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <p class="help-inline" ng-show="userForm.strategy.$error.required">Required</p>
+                        <p class="help-inline" ng-show="userForm.strategy.$error.required && !userForm.strategy.$pristine">Required</p>
                     </div>
 
                     <button type="submit" class="btn btn-primary">CONTACT ME</button>
