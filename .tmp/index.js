@@ -57717,7 +57717,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".album-container .album {\n  background-color: #f7f7f7; }\n\n.album-container .card {\n  padding: 0;\n  margin-bottom: 0;\n  border: 0;\n  position: relative; }\n\n.album-container .card a {\n  position: relative; }\n  .album-container .card a img {\n    border: none;\n    padding: 0;\n    margin: 0;\n    -webkit-filter: grayscale(90%);\n    /* Safari 6.0 - 9.0 */\n    filter: grayscale(90%);\n    border-radius: 0; }\n    .album-container .card a img:hover {\n      -webkit-filter: grayscale(50%);\n      /* Safari 6.0 - 9.0 */\n      filter: grayscale(50%); }\n  .album-container .card a .card-text {\n    font-size: 85%;\n    position: absolute;\n    top: 50%;\n    padding: 0 1rem 0 1rem;\n    width: 100%;\n    color: #ffff00;\n    font-size: 16px; }\n", ""]);
+exports.push([module.i, ".album-container .album {\n  background-color: #f7f7f7; }\n\n.album-container .card {\n  padding: 0;\n  margin-bottom: 0;\n  border: 0;\n  position: relative; }\n\n.album-container .card a {\n  position: relative; }\n  .album-container .card a img {\n    border: none;\n    padding: 0;\n    margin: 0;\n    -webkit-filter: grayscale(100%);\n    /* Safari 6.0 - 9.0 */\n    filter: grayscale(100%);\n    border-radius: 0; }\n    .album-container .card a img:hover {\n      -webkit-filter: grayscale(50%);\n      /* Safari 6.0 - 9.0 */\n      filter: grayscale(50%); }\n  .album-container .card a .card-text {\n    position: absolute;\n    top: 50%;\n    padding: 0 1rem 0 1rem;\n    width: 100%;\n    color: #ffff00;\n    font-size: 16px; }\n", ""]);
 
 // exports
 
@@ -57745,7 +57745,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".carousel-container {\n  z-index: 1; }\n  .carousel-container img {\n    width: auto;\n    height: 400px; }\n    @media screen and (min-width: 992px) {\n      .carousel-container img {\n        height: 400px;\n        width: 100%; } }\n  .carousel-container .carousel-indicators {\n    z-index: 1; }\n", ""]);
+exports.push([module.i, ".carousel-container {\n  z-index: 1; }\n  .carousel-container img {\n    width: auto;\n    height: 400px;\n    max-width: none; }\n    @media screen and (min-width: 992px) {\n      .carousel-container img {\n        height: 400px;\n        width: 100%; } }\n  .carousel-container .carousel-indicators {\n    z-index: 1; }\n", ""]);
 
 // exports
 
