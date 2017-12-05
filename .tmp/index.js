@@ -57824,7 +57824,7 @@ exports.push([module.i, "@charset \"UTF-8\";\n/*!\n * Bootstrap v4.0.0-beta.2 (h
 /* 23 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-container\">\n  <fountain-header></fountain-header>\n  <main class=\"main\">\n    <!--<fountain-title></fountain-title>-->\n    <fountain-home></fountain-home>\n  </main>\n  <fountain-footer></fountain-footer>\n</div>\n";
+module.exports = "<div class=\"main-container\">\n  <fountain-header></fountain-header>\n  <main class=\"main\">\n    <fountain-home></fountain-home>\n  </main>\n  <fountain-footer></fountain-footer>\n</div>\n";
 
 /***/ }),
 /* 24 */
@@ -57860,7 +57860,7 @@ module.exports = "<div class=\"home-container\">\n    <fountain-carousel></fount
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"footer\" ng-init=\"$ctrl.init()\">\n    <p>fuck angular </p>\n</footer>\n";
+module.exports = "<footer class=\"footer\" ng-init=\"$ctrl.init()\">\n</footer>\n";
 
 /***/ }),
 /* 30 */
